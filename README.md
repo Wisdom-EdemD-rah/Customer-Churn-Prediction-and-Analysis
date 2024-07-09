@@ -507,26 +507,27 @@ Load the saved model and use it to predict churn on new data.
 
 python
 
-# Load the trained model
+#### Load the trained model
 
 loaded_model = joblib.load('logistic_regression_model.pkl')
 
-# Apply the preprocessing pipeline to the test data
+#### Apply the preprocessing pipeline to the test data
 
 test_data_processed = preprocessor.transform(test_data)
 
-# Use the loaded model to make predictions
+#### Use the loaded model to make predictions
 
 test_data['Churn'] = loaded_model.predict(test_data_processed)
 
-# Save the predictions to a new file
+#### Save the predictions to a new file
 
 test_data.to_csv('test_data_with_predictions.csv', index=False)
 
-# Print the first few rows of the test data with predictions
+#### Print the first few rows of the test data with predictions
 
 print(test_data.head())
-Conclusion
+
+#### Conclusion
 The Logistic Regression model provided the best performance in predicting customer churn. This model can be used to identify high-risk customers, allowing for targeted retention strategies.
 
 #### Files
@@ -549,7 +550,6 @@ Joblib
 To install the required packages, use the following command:
 
 bash
-Copy code
 pip install pandas numpy scikit-learn seaborn matplotlib joblib
 
 
@@ -574,7 +574,7 @@ This project is licensed under the [MIT License](https://github.com/Wisdom-EdemD
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 #### Acknowledgements 🙏
-I would like to express my gratitude to the [Azubi Africa Data Analyst Program] (https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgeting my scrum masters on this project Rachel Appiah-Kubi & Emmanuel Koupoh
+I would like to express my gratitude to the [Azubi Africa Data Analyst Program] (https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgetting my Teachops on this project Rachael Appiah-Kubi & Glen
 
 #### 📧 Contact
 For questions or feedback, please contact [Wisdom Edem Drah](https://github.com/Wisdom-EdemD-rah?tab=repositories)
