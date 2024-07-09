@@ -560,7 +560,7 @@ Find the Power BI dashboard [Power BI]()
 Discover Python integration with Power [BI here]()
 
 #### Author 👨‍💼
-Name	Israel Anaba Ayamga
+Name	Wisdom Edem Drah
 
 Article Link [here]()
 
