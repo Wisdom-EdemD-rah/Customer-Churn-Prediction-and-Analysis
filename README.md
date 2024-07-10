@@ -469,6 +469,42 @@ The third part of the data called LP2_Telco-churn-last-2000.csv. is hosted on a 
 
 20.	Churn -- Whether the customer churned or not (Yes or No)
 
+Analytical Questions
+1. What are the primary factors driving churn among different genders, and how do they differ?
+Conduct a multivariate analysis to identify and compare the key factors contributing to churn for male and female customers. Consider variables such as service quality, customer service interactions, billing issues, and usage patterns. Use techniques like logistic regression or decision trees to determine the relative importance of these factors.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/c95e4ba3-de7e-41d0-9718-23a9e305be66)
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/60e59b0d-506a-4d7e-8088-f4694299fc55)
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/ee387b2f-3bf1-43fb-a2d2-aed4b6d2b38c)
+
+
+2.  Is there a significant association between gender and churn?
+Assess whether there is a statistically significant relationship between a customer's gender and their likelihood of churning.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/b32e6552-4117-4ccf-b11e-45f06e33faf3)
+
+3. Analyze whether senior citizens have higher churn rates compared to non-senior citizens.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/c69d7545-e431-401b-9738-5d876c5d545b)
+
+4. Do paperless billing and payment methods influence churn?
+Investigate if the use of paperless billing and different payment methods (e.g., electronic check, mailed check) has an impact on customer churn rates.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/b88f591b-6544-41ee-87e0-a7975a1e6eab)
+
+
+5. Does the presence of dependents affect monthly charges?
+Examine if customers with dependents tend to pay higher or lower monthly charges compared to those without dependents.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/ca8ccb28-e2f8-49f4-be23-b1aa7f9a1d2c)
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/af6965cc-b123-4056-a2b2-892d96466472)
+
+6. Which gender pays more monthly charges?
+Determine whether male or female customers have higher average monthly charges.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/18eecedc-1731-4b52-ad3f-b073ff21260a)
+
+7. Does the presence of dependents affect customer churn?
+Evaluate if having dependents influences the likelihood of a customer churning.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/a3d158eb-a6c3-4952-ab18-c6cc7d11c194)
+
+8. Which gender exhibited the highest churn?
+Identify which gender, male or female, has a higher rate of customer churn.
+![image](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/cc0775f1-3d2d-438c-a216-dcefc34fe836)
 
 #### Feature Engineering
 Map boolean columns to 'Yes'/'No' and then to 1/0.
@@ -563,9 +599,9 @@ This dashboard provides a comprehensive overview of customer churn analysis for 
 
 Average Monthly Charge: Displays the average monthly charge for customers, which is $64.50.
 
-Churners: Shows the total number of customers who have churned, which is 675.
+Churners: This shows the total number of customers who have churned, which is 675.
 
-Non-Churners: Shows the total number of customers who have not churned, which is 1883.
+Non-Churners: This shows the total number of customers who have not churned, which is 1883.
 
 Churn Rate: Displays the churn rate as a percentage, which is 26.4%.
 
@@ -599,7 +635,7 @@ Analyzing customer churn and implementing retention strategies offer valuable in
 
 • Retaining High-Value Customers: Identifying high-value customers prone to churn enables businesses to offer personalized retention incentives, fostering loyalty and reducing churn rates.
 
-• Challenges Faced: Imbalanced Data: Managing imbalanced data required careful application of SMOTE and class weight techniques to avoid bias and ensure accurate predictions.
+• Challenges Faced: Imbalanced Data: Managing imbalanced data requires careful application of SMOTE and class weight techniques to avoid bias and ensure accurate predictions.
 
 • Hyperparameter Tuning: Optimizing model parameters was challenging due to the complexity of models like Random Forest and Linear Regression. Techniques such as grid search and cross-validation were essential for finding optimal settings.
 
