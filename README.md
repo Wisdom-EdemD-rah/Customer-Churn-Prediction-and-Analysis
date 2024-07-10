@@ -35,7 +35,7 @@ In this project, I aim to find the likelihood of a customer leaving the organiza
     3. Feature Engineering (Creating New Features, (binning & bucketing), Handling Missing Data, Encoding, Standardization, 
         Normalization, Scaling)
       a. Create a pipeline to preprocess the data
-        1. Separate inpute features into numeric and categorical for different pipelines
+        1. Separate impute features into numeric and categorical for different pipelines
         2. Handle missing values using imputation Techniques
         3. Scaling or normalising numeric features
         4. Encode categorical features
@@ -79,7 +79,7 @@ Choose any of the line of code that will work on your local machine.
 #### Activate the Python's virtual environment :
 This will ensure that the Python kernel & libraries will be those of the created isolated environment.
 
-     - for windows : 
+     - for Windows : 
                   venv\Scripts\activate
 
      - for Linux & MacOS :
@@ -556,15 +556,79 @@ pip install pandas numpy scikit-learn seaborn matplotlib joblib
 #### Power BI Deployment 🌟
 I take my analysis to the next level with Power BI's Python scripting tool:
 
-Find the Power BI dashboard [Power BI]()
-Discover Python integration with Power [BI here]()
+Find the Power BI dashboard [Power BI](https://app.powerbi.com/groups/me/reports/ef2b9364-48bf-4d65-909f-81af5d324499/ReportSection?experience=power-bi)
+<img width="742" alt="image" src="https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis/assets/159122419/a3fa7735-8b86-4c7d-8cb8-e52fc053aa97">
+
+This dashboard provides a comprehensive overview of customer churn analysis for a telecommunications company. Here's a breakdown of each component:
+
+Average Monthly Charge: Displays the average monthly charge for customers, which is $64.50.
+
+Churners: Shows the total number of customers who have churned, which is 675.
+
+Non-Churners: Shows the total number of customers who have not churned, which is 1883.
+
+Churn Rate: Displays the churn rate as a percentage, which is 26.4%.
+
+Churners by Gender: A pie chart that breaks down the churners by gender, showing nearly equal percentages of male (49.48%) and female (50.52%) churners.
+
+Non-Senior Citizens by Churn: A bar chart showing the number of non-senior citizens who have churned (174) versus those who have not (236).
+
+Senior Citizens by Churn: A bar chart showing the number of senior citizens who have churned (0.5k) versus those who have not (1.6k).
+
+Monthly Charge by Presence of Dependents: A doughnut chart displaying the distribution of monthly charges by whether customers have dependents (49.19k without dependents and 115.87k with dependents).
+
+Payment Methods by Churn Rate & Paperless Billing: A combination chart showing the count of customers using different payment methods along with their churn rates and whether they use paperless billing. It indicates higher churn rates for electronic checks and lower for automatic payments via bank transfer or credit card.
+
+Average of Monthly Charges by Gender: A bar chart showing the average monthly charges by gender, with females slightly lower than males.
+
+Churners and Churn Rate by Presence of Dependents: A bar chart with a line overlay showing the count of churners and churn rates by the presence of dependents. It indicates a higher churn rate for customers without dependents (31.71%) compared to those with dependents (14.90%).
+
+In a nutshell, this dashboard helps in visualizing key metrics and trends related to customer churn, such as demographic influences, payment methods, and the impact of dependents, which can inform strategies to reduce churn and improve customer retention.
+
+
+#### Key Insights and Conclusion
+Analyzing customer churn and implementing retention strategies offer valuable insights into customer behavior and business performance enhancement. Here are the key takeaways from this analysis:
+
+• Churn Distribution: The analysis of churned versus non-churned customers revealed that a significant portion of customers remained loyal during the observation period.
+
+• Feature Importance: Important factors such as contract type, monthly charges, and tenure significantly influence customer churn. Businesses should prioritize these factors when developing retention strategies.
+
+• Dealing with Imbalanced Data: Addressing imbalanced data using techniques like SMOTE and class weight balancing improved model training by creating a more representative dataset and enhancing predictive accuracy.
+
+• Model Performance: Machine learning models, particularly Random Forest and Logistic Regression, showed promising accuracy in predicting customer churn. Fine-tuning model parameters and rigorous evaluation were critical for optimizing their performance.
+
+• Retaining High-Value Customers: Identifying high-value customers prone to churn enables businesses to offer personalized retention incentives, fostering loyalty and reducing churn rates.
+
+• Challenges Faced: Imbalanced Data: Managing imbalanced data required careful application of SMOTE and class weight techniques to avoid bias and ensure accurate predictions.
+
+• Hyperparameter Tuning: Optimizing model parameters was challenging due to the complexity of models like Random Forest and Linear Regression. Techniques such as grid search and cross-validation were essential for finding optimal settings.
+
+• Interpreting Insights: Understanding relationships between features and churn in complex models posed challenges. Analyzing feature importance helped mitigate this issue.
+
+• Next Steps: Continuous Monitoring: Regularly monitoring churn patterns and analyzing new data will provide insights into evolving customer behaviours, enabling proactive adjustments to retention strategies.
+
+• Personalized Offers: Implementing targeted offers based on customer behaviour can enhance engagement and loyalty.
+
+• Advanced Analytics: Leveraging advanced techniques such as deep learning or ensemble methods can further improve churn prediction accuracy.
+
+• Feedback Integration: Establishing a feedback loop from customer interactions helps refine models and strategies over time.
+
+• Customer-Centric Approach: Prioritizing customer feedback and tailored experiences fosters strong customer relationships and loyalty.
+
+In conclusion, analyzing customer churn provides actionable insights for businesses to retain customers and enhance overall performance. By leveraging advanced analytics and continuously refining strategies, businesses can effectively reduce churn and cultivate lasting customer loyalty.
+
+
+#### Acknowledgements
+I would like to extend my sincere appreciation to the Azubi Africa Data Analytics and Science team for their exceptional support and guidance throughout this project. I am especially grateful to Portia Bentum, Glen Nii-Noi Anum, and Racheal Appiah-Kubi for their ongoing encouragement, valuable insights, and expertise. Their contributions were crucial to the successful completion of this analysis, and their commitment to creating a collaborative and innovative environment has been truly inspiring. Thank you for your steadfast support and for being an essential part of this journey.
+
+
 
 #### Author 👨‍💼
 Name	Wisdom Edem Drah
 
-Article Link [here]()
+Article Link [here](https://medium.com/@drahwizi06/95d4d0aa8963)
 
-[Github]()
+[Github](https://github.com/Wisdom-EdemD-rah/Customer-Churn-Prediction-and-Analysis)
 
 
 #### 📝 License
@@ -573,8 +637,16 @@ This project is licensed under the [MIT License](https://github.com/Wisdom-EdemD
 #### 🤝 Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
+Fork the repository.
+Create a new branch: git checkout -b feature-name.
+Commit your changes: git commit -m 'Add feature'.
+Push to the branch: git push origin feature-name.
+Create a pull request.
+
 #### Acknowledgements 🙏
-I would like to express my gratitude to the [Azubi Africa Data Analyst Program] (https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgetting my Teachops on this project Rachael Appiah-Kubi & Glen
+I would like to express my gratitude to the [Azubi Africa Data Analyst Program] (https://www.azubiafrica.org/data-analytics) for their support and for offering valuable projects as part of this program. Not forgetting my Teachops on this project Rachael Appiah-Kubi & Glen Nii-Noi Anum
 
 #### 📧 Contact
 For questions or feedback, please contact [Wisdom Edem Drah](https://github.com/Wisdom-EdemD-rah?tab=repositories)
+
+Connect with me on [LinkedIn Here](https://www.linkedin.com/in/wisdom-edem-drah-/) 
